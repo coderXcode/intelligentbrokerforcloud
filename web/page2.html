@@ -1,0 +1,89 @@
+<html>
+<head> <link href="css/theme2.css" rel="stylesheet" type="text/css" />
+    <script>
+        function fun()
+            {  var ck_name = /^[A-Za-z0-9]{1,40}$/;
+                var ck_name2 = /^[A-Za-z0-9-]{1,40}$/;
+//var ck_username = /^[A-Za-z0-9]{1,20}$/;
+//var ck_password =  /^[A-Za-z0-9!@#$%^&*()_]{3,20}$/;
+///var ck_add=/^[A-Za-z0-9!@#$%^&*()_ ]{3,40}$/;
+var ck_numb=/^[0-9]{1,11}$/;
+
+var name=document.getElementById("area").value;
+//alert(name);
+var core=document.getElementById("core").value;
+//alert(pass);
+var ram=document.getElementById("ram").value;
+var store=document.getElementById("storage").value;
+var cost=document.getElementById("cost").value;
+var av=document.getElementById("avail").value;    
+var bw=document.getElementById("bndwd").value;    
+     
+
+//alert(pass);
+//alert(email);
+if(!name.match(ck_name2))
+{
+    alert("name not to be separated by space");
+    return false;
+}
+else if(!core.match(ck_numb))
+{
+    alert("number not space");
+return false;
+}
+else if(!ram.match(ck_numb))
+{
+    alert("ram only numeric no space");
+return false;
+}
+else if(!store.match(ck_numb))
+{
+    alert("storage only numeric");
+return false;
+}
+else if(!cost.match(ck_numb))
+{
+    alert("cost only numeric");
+return false;
+}
+else if(!av.match(ck_numb))
+{
+    alert("availibility only numeric");
+return false;
+}
+else  if(!bw.match(ck_numb))
+{
+    alert("bandwidth only numeric");
+return false;
+}
+            }
+</script>
+
+</head>
+<body>
+<div align="center" id="a" > Enter Your Requirements For Iaas </div>
+<div id="e">
+<table >
+    <form action="into" method="POST" onsubmit="return fun();">
+<tr><td>Area</td><td>
+ <input type="text " name="ar" required="true" id="area"/></td></tr>
+<tr><td>Core:</td><td>
+ <input type="text " name="cr" required="true" id="core"/></td></tr>
+<tr><td>Ram:</td><td>
+ <input type="text " name="rm" required="true" id="ram"/></td></tr>
+<tr><td>Storage:</td><td>
+ <input type="text " name="str" required="true" id="storage"/></td></tr>
+<tr><td>Cost:</td><td>
+ <input type="text " name="cost" required="true"placeholder="maximum" id="cost"/></td></tr>
+<tr><td>Availability :</td><td>
+ <input type="text " name="avail" required="true" placeholder="minimum" id="avail"/></td></tr>
+<tr><td>Bandwidth :</td><td>
+ <input type="text " name="bw" required="true" placeholder="minimum" id="bndwd"/></td></tr>
+<tr><td><center><input type ="submit" name="submit" value="submit"/></center></td></tr>
+</form>
+</table>
+</div>
+</center>
+</body>
+</html>
