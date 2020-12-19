@@ -5,7 +5,7 @@ this project we can take data from a html file online or offline (for eg for clo
 
 **IMPORTANT**
 
-1.(FOR NEW DATABASE) CREATE A MYSQL DATABASE NAMED "clodserv" AND SET USERNAME TO MANAKS AND PASSWORD TO "123".
+1.(FOR NEW DATABASE) CREATE A MYSQL DATABASE NAMED "cloudserv" AND SET USERNAME TO MANAKS AND PASSWORD TO "123".
 
 2.(FOR AN OLDER DATABASE MAKE CHANGES IN DB.JAVA CHANGE- "  con=DriverManager.getConnection("jdbc:derby://localhost:1527/DATABASENAME","USERNAME","PASSWORD");"
 
