@@ -1,6 +1,6 @@
 # intelligentbrokerforcloud
 
-**(NOTE. FOR OPTIMAL EXPERIENCE PLEASE USE NETBEANS AS IDE AS THIS PROJECT WAS CREATED USING NETBEANS)
+**(NOTE. FOR OPTIMAL EXPERIENCE PLEASE USE NETBEANS AS IDE AS THIS PROJECT WAS CREATED USING NETBEANS)**
 
 this project we can take data from a html file online or offline (for eg for cloud based systems the cloud details table and number of resources etc) now once data has been fetched from the html page we can specify requirements nd it will display the cloud available.
 
